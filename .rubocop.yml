@@ -1,0 +1,19 @@
+# RuboCop設定
+
+# RuboCopからStandardを利用する方法の参考元:
+#   https://github.com/testdouble/standard/issues/135#issuecomment-651198150
+
+require:
+  - standard
+  - rubocop-rails
+  - rubocop-rspec
+
+inherit_gem:
+  standard: config/base.yml
+
+Rails:
+  Enabled: true
+
+RSpec:
+  Enabled: true
+
