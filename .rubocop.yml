@@ -2,11 +2,20 @@
 
 # RuboCopからStandardを利用する方法の参考元:
 #   https://github.com/testdouble/standard/issues/135#issuecomment-651198150
+#   https://evilmartians.com/chronicles/rubocoping-with-legacy-bring-your-ruby-code-up-to-standard
 
 require:
   - standard
   - rubocop-rails
   - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - bin/*
+    - config/boot.rb
+    - config/initializers/simple_form.rb
+    - db/schema.rb
+    - node_modules/**/*
 
 inherit_gem:
   standard: config/base.yml
@@ -17,3 +26,63 @@ Rails:
 RSpec:
   Enabled: true
 
+Capybara:
+  Enabled: true
+
+FactoryBot:
+  Enabled: true
+
+# カスタマイズ
+
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_first_argument
+
+Layout/ExtraSpacing:
+  AllowForAlignment: true
+  AllowBeforeTrailingComments: true
+  ForceEqualSignAlignment: false
+
+Layout/LineLength:
+  Enabled: true
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: no_space
+
+Metrics/AbcSize:
+  Enabled: true
+  Max: 20 # デフォルト値は17
+  Exclude:
+    - db/migrate/**/*
+
+Rails/NotNullColumn:
+  Enabled: false
+
+RSpec/ContextWording:
+  Enabled: false
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/features/**/*
+    - spec/system/**/*
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/FilePath:
+  Exclude:
+    - spec/models/*_translation_spec.rb
+
+RSpec/MultipleExpectations:
+  Exclude:
+    - spec/features/**/*
+    - spec/system/**/*
+
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
