@@ -35,12 +35,6 @@ Rails:
 RSpec:
   Enabled: true
 
-Capybara:
-  Enabled: true
-
-FactoryBot:
-  Enabled: true
-
 # カスタマイズ
 
 Layout/ArgumentAlignment:
