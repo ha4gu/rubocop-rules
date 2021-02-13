@@ -1,5 +1,14 @@
 # RuboCop設定
 
+# 各公式ドキュメント:
+#  RuboCop:             https://docs.rubocop.org/rubocop/
+#  RuboCop Performance: https://docs.rubocop.org/rubocop-performance/
+#  RuboCop Rails:       https://docs.rubocop.org/rubocop-rails/
+#  RuboCop RSpec:       https://docs.rubocop.org/rubocop-rspec/
+
+# Standardの設定値:
+#  https://github.com/testdouble/standard/blob/master/config/base.yml
+
 # RuboCopからStandardを利用する方法の参考元:
 #   https://github.com/testdouble/standard/issues/135#issuecomment-651198150
 #   https://evilmartians.com/chronicles/rubocoping-with-legacy-bring-your-ruby-code-up-to-standard
@@ -36,6 +45,9 @@ FactoryBot:
 
 Layout/ArgumentAlignment:
   EnforcedStyle: with_first_argument
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: true
 
 Layout/ExtraSpacing:
   AllowForAlignment: true
@@ -77,6 +89,9 @@ RSpec/MultipleExpectations:
   Exclude:
     - spec/features/**/*
     - spec/system/**/*
+
+RSpec/NestedGroups:
+  Max: 5 # デフォルト値は3
 
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
