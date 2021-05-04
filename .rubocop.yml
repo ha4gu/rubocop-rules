@@ -25,6 +25,8 @@ AllCops:
     - config/initializers/simple_form.rb
     - db/schema.rb
     - node_modules/**/*
+    - vendor/bundle/**/*
+  NewCops: enable
 
 inherit_gem:
   standard: config/base.yml

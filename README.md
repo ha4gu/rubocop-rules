@@ -1,20 +1,12 @@
 # rubocop-rules
 
-`Gemfile` に以下の内容を追加する。
+以下のgemを予めインストールしておく。
 
-```ruby
-group :development do
-  # ....
+- rubocop-rails
+- rubocop-rspec
+- standard
 
-  # RuboCop系
-  gem "rubocop", require: false
-  gem "rubocop-ast", require: false
-  gem "rubocop-performance", require: false
-  gem "rubocop-rails", require: false
-  gem "rubocop-rspec", require: false
-  gem "standard", require: false
-end
-```
+おそらく [rbenv-default-gems](https://github.com/rbenv/rbenv-default-gems) を使用するのが一番手っ取り早い。
 
 `.rubocop.yml` を以下の内容で作成する。
 
