@@ -90,6 +90,9 @@ RSpec/MultipleExpectations:
 RSpec/NestedGroups:
   Max: 5 # デフォルト値は3
 
+Style/RedundantFetchBlock:
+  SafeForConstants: true
+
 Style/TrailingCommaInArguments:
   EnforcedStyleForMultiline: comma
 
