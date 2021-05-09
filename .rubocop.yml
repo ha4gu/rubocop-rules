@@ -40,6 +40,11 @@ RSpec:
 
 # カスタマイズ
 
+Bundler/OrderedGems:
+  Enabled: true
+  TreatCommentsAsGroupSeparators: true
+  ConsiderPunctuation: true
+
 Layout/ArgumentAlignment:
   EnforcedStyle: with_first_argument
 
