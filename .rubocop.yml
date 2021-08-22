@@ -58,6 +58,9 @@ Layout/ExtraSpacing:
 
 Layout/LineLength:
   Enabled: true
+  Max: 120
+  Exclude:
+    - config/routes.rb
 
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: space
