@@ -72,6 +72,9 @@ Metrics/AbcSize:
   Exclude:
     - db/migrate/**/*
 
+Rails/BulkChangeTable:
+  Enabled: false
+
 Rails/NotNullColumn:
   Enabled: false
 
