@@ -1,14 +1,14 @@
 # rubocop-rules
 
-以下のgemを予めインストールしておく。
+`Gemfile`
 
-- rubocop-rails
-- rubocop-rspec
-- standard
+```ruby
+gem "rubocop-rails", require: false
+gem "rubocop-rspec", require: false
+gem "standard",      require: false
+```
 
-おそらく [rbenv-default-gems](https://github.com/rbenv/rbenv-default-gems) を使用するのが一番手っ取り早い。
-
-`.rubocop.yml` を以下の内容で作成する。
+`.rubocop.yml`
 
 ```ruby
 inherit_from:
