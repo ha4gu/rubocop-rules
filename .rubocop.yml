@@ -70,6 +70,10 @@ Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: space
   EnforcedStyleForEmptyBraces: no_space
 
+Lint/SymbolConversion:
+  Enabled: true
+  EnforcedStyle: consistent
+
 Metrics/AbcSize:
   Enabled: true
   Max: 20 # デフォルト値は17
