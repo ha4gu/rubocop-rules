@@ -22,8 +22,6 @@ AllCops:
   NewCops: enable
   Exclude:
     - bin/*
-    - config/boot.rb
-    - config/initializers/simple_form.rb
     - db/migrate/*.active_storage.rb
     - db/schema.rb
     - node_modules/**/*
