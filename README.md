@@ -7,9 +7,10 @@ group :development, :test do
   # ... other gems ...
 
   # RuboCop
+  gem "rubocop-capybara", require: false
   gem "rubocop-rails", require: false
   gem "rubocop-rspec", require: false
-  gem "standard", "> 1.19", require: false
+  gem "standard", "~> 1.25", require: false
 end
 ```
 

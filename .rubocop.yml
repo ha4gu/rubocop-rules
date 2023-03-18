@@ -17,6 +17,7 @@ require:
   - standard
   - rubocop-rails
   - rubocop-rspec
+  - rubocop-capybara
 
 AllCops:
   NewCops: enable
@@ -30,6 +31,9 @@ AllCops:
 
 inherit_gem:
   standard: config/base.yml
+
+Capybara:
+  Enabled: true
 
 Rails:
   Enabled: true
