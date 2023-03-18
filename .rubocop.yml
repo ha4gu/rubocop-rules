@@ -67,6 +67,7 @@ Layout/LineLength:
   Enabled: true
   Max: 120
   Exclude:
+    - config/initializers/devise.rb
     - config/routes.rb
 
 Layout/SpaceInsideHashLiteralBraces:
