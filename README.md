@@ -19,4 +19,8 @@ end
 ```yaml
 inherit_from:
   - https://raw.githubusercontent.com/ha4gu/rubocop-rules/main/.rubocop.yml
+
+inherit_mode:
+  merge:
+    - Exclude
 ```
