@@ -2,6 +2,8 @@
 
 # 各公式ドキュメント:
 #  RuboCop:             https://docs.rubocop.org/rubocop/
+#  RuboCop Capybara:    https://docs.rubocop.org/rubocop-capybara/
+#  RuboCop factory_bot: https://docs.rubocop.org/rubocop-factory_bot/
 #  RuboCop Performance: https://docs.rubocop.org/rubocop-performance/
 #  RuboCop Rails:       https://docs.rubocop.org/rubocop-rails/
 #  RuboCop RSpec:       https://docs.rubocop.org/rubocop-rspec/
@@ -15,9 +17,10 @@
 
 require:
   - standard
+  - rubocop-capybara
+  - rubocop-factory_bot
   - rubocop-rails
   - rubocop-rspec
-  - rubocop-capybara
 
 AllCops:
   NewCops: enable
@@ -33,6 +36,9 @@ inherit_gem:
   standard: config/base.yml
 
 Capybara:
+  Enabled: true
+
+FactoryBot:
   Enabled: true
 
 Rails:

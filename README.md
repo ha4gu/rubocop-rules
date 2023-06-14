@@ -8,9 +8,10 @@ group :development, :test do
 
   # RuboCop
   gem "rubocop-capybara", require: false
+  gem "rubocop-factory_bot", require: false
   gem "rubocop-rails", require: false
   gem "rubocop-rspec", require: false
-  gem "standard", "~> 1.25", require: false
+  gem "standard", "~> 1.29", require: false
 end
 ```
 
