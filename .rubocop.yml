@@ -53,7 +53,7 @@ RSpec:
 Bundler/OrderedGems:
   Enabled: true
   TreatCommentsAsGroupSeparators: true
-  ConsiderPunctuation: true
+  ConsiderPunctuation: false
 
 Layout/ArgumentAlignment:
   EnforcedStyle: with_first_argument
