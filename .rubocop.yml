@@ -101,6 +101,10 @@ Rails/RakeEnvironment:
   Exclude:
     - lib/tasks/auto_annotate_models.rake
 
+Rails/SkipsModelValidations:
+  AllowedMethods:
+    - touch
+
 RSpec/ContextWording:
   Enabled: false
 
