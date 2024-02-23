@@ -55,6 +55,9 @@ Bundler/OrderedGems:
   TreatCommentsAsGroupSeparators: true
   ConsiderPunctuation: false
 
+Capybara/ClickLinkOrButtonStyle:
+  Enabled: false
+
 Layout/ArgumentAlignment:
   EnforcedStyle: with_first_argument
 
