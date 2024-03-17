@@ -134,6 +134,9 @@ RSpec/NestedGroups:
 RSpec/Rails/InferredSpecType:
   Enabled: false
 
+RSpec/Rails/NegationBeValid:
+  EnforcedStyle: be_invalid
+
 Style/RedundantFetchBlock:
   SafeForConstants: true
 
