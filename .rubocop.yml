@@ -20,6 +20,7 @@ require:
   - standard
   - rubocop-capybara
   - rubocop-factory_bot
+  - rubocop-performance
   - rubocop-rails
   - rubocop-rspec
   - rubocop-rspec_rails
@@ -42,6 +43,9 @@ Capybara:
   Enabled: true
 
 FactoryBot:
+  Enabled: true
+
+Performance:
   Enabled: true
 
 Rails:
