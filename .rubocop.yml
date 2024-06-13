@@ -7,6 +7,7 @@
 #  RuboCop Performance: https://docs.rubocop.org/rubocop-performance/
 #  RuboCop Rails:       https://docs.rubocop.org/rubocop-rails/
 #  RuboCop RSpec:       https://docs.rubocop.org/rubocop-rspec/
+#  RuboCop RSpec Rails: https://docs.rubocop.org/rubocop-rspec_rails/
 
 # Standardの設定値:
 #  https://github.com/testdouble/standard/blob/master/config/base.yml
@@ -21,6 +22,7 @@ require:
   - rubocop-factory_bot
   - rubocop-rails
   - rubocop-rspec
+  - rubocop-rspec_rails
   - rubocop-rubycw
 
 AllCops:
@@ -46,6 +48,9 @@ Rails:
   Enabled: true
 
 RSpec:
+  Enabled: true
+
+RSpecRails:
   Enabled: true
 
 # カスタマイズ
@@ -97,6 +102,10 @@ Metrics/AbcSize:
 Rails/BulkChangeTable:
   Enabled: false
 
+Rails/FilePath:
+  Exclude:
+    - spec/models/*_translation_spec.rb
+
 Rails/NotNullColumn:
   Enabled: false
 
@@ -119,10 +128,6 @@ RSpec/DescribeClass:
 RSpec/ExampleLength:
   Enabled: false
 
-RSpec/FilePath:
-  Exclude:
-    - spec/models/*_translation_spec.rb
-
 RSpec/MultipleExpectations:
   Exclude:
     - spec/features/**/*
@@ -131,10 +136,10 @@ RSpec/MultipleExpectations:
 RSpec/NestedGroups:
   Max: 5 # デフォルト値は3
 
-RSpec/Rails/InferredSpecType:
+RSpecRails/InferredSpecType:
   Enabled: false
 
-RSpec/Rails/NegationBeValid:
+RSpecRails/NegationBeValid:
   EnforcedStyle: be_invalid
 
 Style/RedundantFetchBlock:
